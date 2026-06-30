@@ -19,11 +19,13 @@ int main() {
 	cout << "Gender: " << gender << endl << "Married: " << isMarried << endl; 
 	cout << "**************************************************" << endl; 
 
+	
 //2 
 	int x = 20, y = 30, b = 10;
-	cout << x << "+" << endl << y << "+" << endl << b << endl << "__________________________________" << endl << "Total: " << x + y + b << endl;
+	cout << x << "+" << endl << y << "+" << endl << b << endl;  
+	cout << "_________________________________________" << endl << x + y + b << endl; 
 
-
+	
 //3 
 	int age1 = 25; 
 	cout << endl <<  "You'r age after 5 years will be " << age1 + 5 << " years old." << endl; 
