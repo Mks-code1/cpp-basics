@@ -1,0 +1,90 @@
+#include <iostream> 
+using namespace std; 
+
+enum Gender {Male, Famale};
+enum  Stutus {Single , Married};
+
+struct stMonthly_Salary {
+	float salary; 
+};
+
+struct stResidence {
+	string Current_country; 
+	string Ctrrent_city;
+
+
+};
+
+
+
+struct stContact_info {
+	string phone_number; 
+	string Eamil;
+	stResidence Resdience; 
+};
+
+
+struct all_info {
+
+	string name; 
+	short int age; 
+	string city; 
+	string country; 
+	stMonthly_Salary monthly_salary; 
+	stContact_info contact_info; 
+};
+
+
+
+int main() {
+
+	Gender The_gender; 
+	Stutus marridly_stutus; 
+	all_info person; 
+	string gender; 
+
+
+
+	cout << "Enter your name: " << endl;
+	cin >> person.name; 
+	cout << "Enter your age: " << endl;
+	cin >> person.age; 
+	cout << "Enter your city: " << endl; 
+	cin >> person.city; 
+	cout << "Enter your country: " << endl;
+	cin >> person.country;
+	cout << "Enter your monthly salary: " << endl; 
+	cin >> person.monthly_salary.salary; 
+	cout << "Enter your Crrent country: " << endl; 
+	cin >> person.contact_info.Resdience.Current_country;
+	cout << "Enter youe current city: " << endl; 
+	cin >> person.contact_info.Resdience.Ctrrent_city;
+	cout << "Enter youe phone number : " << endl; 
+	cin >> person.contact_info.phone_number;
+	cout << "Enter your email: " << endl; 
+	cin >> person.contact_info.Eamil;
+
+
+
+
+
+	cout << "******************************************************" << endl;
+	cout << "Name: " << person.name << endl; 
+	cout << "Age: " << person.age << endl; 
+	cout << "City: " << person.city << endl; 
+	cout << "Country: " << person.country << endl; 
+	cout << "Monthly_salary: " << person.monthly_salary.salary<< "$" << endl;
+	cout << "Yearly_salary: " << person.monthly_salary.salary * 12 << "$" << endl; 
+	cout << "Gender: " << Gender::Famale << endl;
+	cout << "Married: " << Stutus::Single << endl; 
+	cout << "******************** Contact Information ********************" << endl;
+	cout << "Phone number: " << person.contact_info.phone_number << endl;
+	cout << "Email: " << person.contact_info.Eamil << endl; 
+	cout << "Current country: " << person.contact_info.Resdience.Current_country << endl; 
+	cout << "Current city: " << person.contact_info.Resdience.Ctrrent_city << endl; 
+	cout << "******************************************************" << endl;
+
+
+	return 0; 
+
+}
