@@ -1,18 +1,18 @@
 #include <iostream> 
 using namespace std; 
 
-enum Gender {Male, Famale};
-enum  Stutus {Single , Married};
 
-struct stMonthly_Salary {
-	float salary; 
-};
-
-struct stResidence {
-	string Current_country; 
-	string Ctrrent_city;
+enum enColor { Red, Blue, yallo, Green };
+enum enGender {Male, Famale};
+enum  enMaritlaStutus {Single , Married};
 
 
+
+struct stAddress {
+	string streetName; 
+	string BuildingNum; 
+	string POBox; 
+	string Zipcode;
 };
 
 
@@ -20,69 +20,49 @@ struct stResidence {
 struct stContact_info {
 	string phone_number; 
 	string Eamil;
-	stResidence Resdience; 
+	stAddress Address; 
 };
 
 
-struct all_info {
+struct stPerson {
 
-	string name; 
+	string FirstName;
+	string LastNam;
 	short int age; 
-	string city; 
-	string country; 
-	stMonthly_Salary monthly_salary; 
-	stContact_info contact_info; 
+	stContact_info ContactInfo;
+	enColor Color; 
+	enGender Gender;
+	enMaritlaStutus MaritalStutus; 
+
+	
 };
 
 
 
 int main() {
-
-	Gender The_gender; 
-	Stutus marridly_stutus; 
-	all_info person; 
-	string gender; 
+	stPerson Person1;
 
 
-
-	cout << "Enter your name: " << endl;
-	cin >> person.name; 
-	cout << "Enter your age: " << endl;
-	cin >> person.age; 
-	cout << "Enter your city: " << endl; 
-	cin >> person.city; 
-	cout << "Enter your country: " << endl;
-	cin >> person.country;
-	cout << "Enter your monthly salary: " << endl; 
-	cin >> person.monthly_salary.salary; 
-	cout << "Enter your Crrent country: " << endl; 
-	cin >> person.contact_info.Resdience.Current_country;
-	cout << "Enter youe current city: " << endl; 
-	cin >> person.contact_info.Resdience.Ctrrent_city;
-	cout << "Enter youe phone number : " << endl; 
-	cin >> person.contact_info.phone_number;
-	cout << "Enter your email: " << endl; 
-	cin >> person.contact_info.Eamil;
-
-
+	Person1.FirstName = "Mohamed";
+	Person1.LastNam = "Saadalden";
+	Person1.age = 20; 
+	Person1.Gender = enGender::Male;
+	Person1.MaritalStutus = enMaritlaStutus::Single;
+	Person1.Color = enColor::Blue;
+	Person1.ContactInfo.phone_number = "0562424386";
+	Person1.ContactInfo.Eamil = "moha@moha.com";
+	Person1.ContactInfo.Address.streetName = "Wadi Hael";
+	Person1.ContactInfo.Address.BuildingNum = "8";
+	Person1.ContactInfo.Address.POBox = "7777";
+	Person1.ContactInfo.Address.Zipcode = "111988";
+ 
 
 
 
 	cout << "******************************************************" << endl;
-	cout << "Name: " << person.name << endl; 
-	cout << "Age: " << person.age << endl; 
-	cout << "City: " << person.city << endl; 
-	cout << "Country: " << person.country << endl; 
-	cout << "Monthly_salary: " << person.monthly_salary.salary<< "$" << endl;
-	cout << "Yearly_salary: " << person.monthly_salary.salary * 12 << "$" << endl; 
-	cout << "Gender: " << Gender::Famale << endl;
-	cout << "Married: " << Stutus::Single << endl; 
-	cout << "******************** Contact Information ********************" << endl;
-	cout << "Phone number: " << person.contact_info.phone_number << endl;
-	cout << "Email: " << person.contact_info.Eamil << endl; 
-	cout << "Current country: " << person.contact_info.Resdience.Current_country << endl; 
-	cout << "Current city: " << person.contact_info.Resdience.Ctrrent_city << endl; 
-	cout << "******************************************************" << endl;
+	cout << "Name: " << Person1.FirstName + " " + Person1.LastNam << endl;
+	cout << "Age: " << Person1.age << endl;  
+
 
 
 	return 0; 
