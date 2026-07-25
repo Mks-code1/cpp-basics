@@ -13,7 +13,8 @@ This repository documents my journey of learning C++ from the fundamentals.
 - Math Functions
 - Enums
 - Structures
-- Exercises
+- Strings
+
 
 ## Goal
 
