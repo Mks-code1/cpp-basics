@@ -14,6 +14,7 @@ This repository documents my journey of learning C++ from the fundamentals.
 - Enums
 - Structures
 - Strings
+- Functions and procedures
 
 
 ## Goal
