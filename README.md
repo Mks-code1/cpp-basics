@@ -15,7 +15,7 @@ This repository documents my journey of learning C++ from the fundamentals.
 - Structures
 - Strings
 - Functions and procedures
-
+- Array 
 
 ## Goal
 
