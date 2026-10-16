@@ -16,7 +16,7 @@ This repository documents my journey of learning C++ from the fundamentals.
 - Strings
 - Functions and procedures
 - Array 
-
+- Enums with IF Statements
 ## Goal
 
 Practice C++ fundamentals and improve problem-solving skills by implementing examples and exercises.
