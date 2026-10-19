@@ -17,6 +17,7 @@ This repository documents my journey of learning C++ from the fundamentals.
 - Functions and procedures
 - Array 
 - Enums with IF Statements
+- Switch .. Case Statement
 ## Goal
 
 Practice C++ fundamentals and improve problem-solving skills by implementing examples and exercises.
