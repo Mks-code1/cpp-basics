@@ -9,32 +9,15 @@ The code in this repository reflects my learning progress. Some files contain co
 ```text
 cpp-basics/
 ├── 01-basics/
-│   ├── variables.cpp
-│   ├── user-input.cpp
-│   └── data-type-conversion.cpp
 ├── 02-operators/
-│   ├── relational-operators.cpp
-│   ├── logical-operators.cpp
-│   └── increment-decrement.cpp
 ├── 03-control-flow/
-│   ├── if-else.cpp
-│   └── switch-case.cpp
 ├── 04-enums/
-│   ├── enums.cpp
-│   ├── enums-with-if.cpp
-│   └── nested-functions-with-enums.cpp
 ├── 05-strings-and-math/
-│   ├── strings.cpp
-│   └── math-functions.cpp
 ├── 06-functions/
-│   ├── procedures-and-functions.cpp
-│   ├── functions-practice-1.cpp
-│   └── functions-homework.cpp
 ├── 07-structures/
-│   ├── structures.cpp
-│   └── arrays-of-structures.cpp
 ├── 08-exercises/
-│   └── exercises.cpp
+├── 09-loops/
+│   └── for-loop-practice.cpp
 └── README.md
 ```
 
@@ -50,27 +33,28 @@ cpp-basics/
 | Functions | Functions, procedures, and practice tasks |
 | Structures | `struct` and arrays of structures |
 | Exercises | Combined practice problems and homework |
+| Loops | `for` loop syntax, counting, sums, factorial, powers, and character codes |
 
 ## Compile and Run
 
 You'll need a C++ compiler such as **g++** (GCC or MinGW).
 
-From the repository root, compile one source file by using its path:
+From the repository root, compile a source file by using its path:
 
 ```bash
-g++ 01-basics/variables.cpp -o variables
+g++ 09-loops/for-loop-practice.cpp -o for-loop-practice
 ```
 
 Run it on Windows:
 
 ```powershell
-.\variables.exe
+.\for-loop-practice.exe
 ```
 
 Run it on Linux or macOS:
 
 ```bash
-./variables
+./for-loop-practice
 ```
 
 Replace the example path with the file you want to practise. If compilation fails, check whether that file contains more than one `main()` function, unfinished exercises, or missing headers.
@@ -85,11 +69,10 @@ Replace the example path with the file you want to practise. If compilation fail
 6. Strings and math functions
 7. Functions and procedures
 8. Structures and arrays of structures
-9. Exercises and review
+9. Loops and practice exercises
 
 ## Notes
 
-- The files have been grouped and renamed for clarity; their original code contents are preserved.
 - Filenames use lowercase words separated by hyphens for consistency.
 - This is a learning repository, so examples may be incomplete or contain mistakes that I will correct as I progress.
 
