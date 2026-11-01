@@ -66,6 +66,78 @@ void capital_letter() {
     }
 }
 
+// Print multiplication tables from 1 to 10 using nested loops.
+void nested_for_loop() {
+    for (int i = 1; i <= 10; i++) {
+        cout << "i=" << i << endl;
+
+        for (int j = 1; j <= 10; j++) {
+            cout << i << " * " << j << "= " << i * j << endl;
+        }
+
+        cout << "--------------------|\n";
+    }
+}
+
+// Print every pair of uppercase letters (A-Z).
+void print_letters_00() {
+    for (int i = 65; i <= 90; i++) {
+        for (int j = 65; j <= 90; j++) {
+            cout << char(i) << ":" << char(j) << endl;
+        }
+    }
+}
+
+// Print an increasing sequence of letters on each line.
+void print_letters_01() {
+    for (int i = 65; i <= 90; i++) {
+        for (int j = 65; j <= i; j++) {
+            cout << char(j);
+        }
+        cout << "\n";
+    }
+}
+
+// Print an increasing number sequence on each line.
+void print_numbers_00() {
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+        }
+        cout << "\n";
+    }
+}
+
+// Print decreasing rows of numbers.
+void print_numbers_01() {
+    for (int i = 10; i >= 1; i--) {
+        for (int j = 1; j < i; j++) {
+            cout << j;
+        }
+        cout << "\n";
+    }
+}
+
+// Print an increasing triangle of stars.
+void line_of_stars_00() {
+    for (int i = 0; i <= 10; i++) {
+        for (int j = 0; j <= i; j++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
+
+// Print a decreasing triangle of stars.
+void line_of_stars_01() {
+    for (int i = 10; i >= 1; i--) {
+        for (int j = 0; j < i; j++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
+
 int main() {
     // for (initialization; condition; update) {
     //     Body of loop
@@ -79,6 +151,15 @@ int main() {
     // cin >> m;
     // int x = power_of_m(num, m);
     // cout << "Power of m = " << x << endl;
+
+    // Nested loop exercises:
+    // nested_for_loop();
+    // line_of_stars_00();
+    // line_of_stars_01();
+    // print_letters_00();
+    // print_letters_01();
+    // print_numbers_00();
+    // print_numbers_01();
 
     capital_letter();
 
