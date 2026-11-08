@@ -17,7 +17,8 @@ cpp-basics/
 ├── 07-structures/
 ├── 08-exercises/
 ├── 09-loops/
-│   └── for-loop-practice.cpp
+│   ├── for-loop-practice.cpp
+│   └── while-loop-practice.cpp
 └── README.md
 ```
 
@@ -33,31 +34,39 @@ cpp-basics/
 | Functions | Functions, procedures, and practice tasks |
 | Structures | `struct` and arrays of structures |
 | Exercises | Combined practice problems and homework |
-| Loops | `for` loop syntax, counting, sums, factorial, powers, and character codes |
+| Loops | `for` and `while` loops, counting, input validation, sums, factorial, powers, sentinel values, and character codes |
+
+## Loop Practice
+
+The loops section contains separate practice files for the loop types studied so far:
+
+- **For loops:** counting, sums, factorial, powers, nested loops, and character patterns.
+- **While loops:** input validation, counting up and down, odd/even sums, factorial, powers, sentinel-controlled input, ASCII letters, and a three-attempt ATM PIN example.
 
 ## Compile and Run
 
 You'll need a C++ compiler such as **g++** (GCC or MinGW).
 
-From the repository root, compile a source file by using its path:
+From the repository root, compile the file you want to practise:
 
 ```bash
 g++ 09-loops/for-loop-practice.cpp -o for-loop-practice
+g++ 09-loops/while-loop-practice.cpp -o while-loop-practice
 ```
 
-Run it on Windows:
+Run the selected executable on Windows:
 
 ```powershell
-.\for-loop-practice.exe
+.\\while-loop-practice.exe
 ```
 
 Run it on Linux or macOS:
 
 ```bash
-./for-loop-practice
+./while-loop-practice
 ```
 
-Replace the example path with the file you want to practise. If compilation fails, check whether that file contains more than one `main()` function, unfinished exercises, or missing headers.
+Replace the example executable with the one you compiled. If compilation fails, check whether the file contains more than one `main()` function, unfinished exercises, or missing headers.
 
 ## Suggested Learning Order
 
